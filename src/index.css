@@ -1,6 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* *::selection {
+*::selection {
   background: transparent;
   color: transparent;
-} */
+}
