@@ -1,6 +1,86 @@
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useRef } from 'react';
+
 function Navbar() {
+  const [show, setShow] = useState(false);
+  const navLinks = useRef(null);
+  const openNavLinks = useRef(null);
+  const closeNavLinks = useRef(null);
+  const home = useRef(null);
+  const servies = useRef(null);
+  const caseStudies = useRef(null);
+  const ourTeams = useRef(null);
+  const blog = useRef(null);
+  const aboutUs = useRef(null);
+  const contactUs = useRef(null);
+
+  useEffect(() => {
+    if (window.innerWidth >= 1024) return; // Only trigger for mobile
+
+    const navItems = [
+      home.current,
+      servies.current,
+      caseStudies.current,
+      ourTeams.current,
+      blog.current,
+      aboutUs.current,
+      contactUs.current,
+    ];
+
+    const tl = gsap.timeline({ defaults: { ease: 'expo.inOut' } });
+
+    if (show) {
+      // Slide nav in
+      tl.to(navLinks.current, {
+        translateX: 0,
+        opacity: 1,
+        duration: 1,
+      });
+
+      // Then animate nav items
+      tl.to(
+        navItems,
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.75,
+          stagger: 0.1,
+        },
+        '-=0.5'
+      ); // Start slightly earlier for smooth overlap
+    } else {
+      tl.to(document.querySelector('body'), {
+        overflow: 'hidden',
+      });
+
+      // First hide nav items
+      tl.to(navItems, {
+        x: 100,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+      });
+
+      // Then slide nav out
+      tl.to(
+        navLinks.current,
+        {
+          translateX: '100%',
+          opacity: 0,
+          duration: 1,
+        },
+        '-=0.4'
+      ); // Overlap for smooth exit
+    }
+
+    // Optional: Add cleanup or media query listener if responsive behavior is needed in future
+  }, [show]); // 👈 Always pass dependencies to useEffect
+
   return (
-    <div className="border-b border-zinc-300">
+    <div className="border-b border-zinc-200">
       <nav
         id="navbar"
         className="h-20 flex items-center justify-between px-2 max-w-[1280px] mx-auto"
@@ -13,10 +93,11 @@ function Navbar() {
         </a>
 
         <ul
+          ref={navLinks}
           id="nav-links"
-          className="absolute lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white/50 lg:bg-transparent flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-6 backdrop-blur-[16px] backdrop-saturate-[180%]"
+          className="absolute lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white/50 lg:bg-transparent flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 backdrop-blur-[16px] backdrop-saturate-[180%] translate-x-full lg:translate-x-0 "
         >
-          <li>
+          <li ref={closeNavLinks} onClick={() => setShow((prev) => !prev)}>
             <a href="#">
               <svg
                 width="24"
@@ -34,39 +115,49 @@ function Navbar() {
               </svg>
             </a>
           </li>
-          <li>
+          <li ref={home}>
             <a href="#" className="px-4 py-2 font-semibold">
               HOME
             </a>
           </li>
-          <li>
+          <li ref={servies}>
             <a href="#" className="px-4 py-2 font-semibold">
               SERVICES
             </a>
           </li>
-          <li>
+          <li ref={caseStudies}>
             <a href="#" className="px-4 py-2 font-semibold">
               CASE STUDIES
             </a>
           </li>
-          <li>
+          <li ref={ourTeams}>
+            <a href="#" className="px-4 py-2 font-semibold">
+              OUR TEAMS
+            </a>
+          </li>
+          <li ref={blog}>
             <a href="#" className="px-4 py-2 font-semibold">
               BLOG
             </a>
           </li>
-          <li>
+          <li ref={aboutUs}>
             <a href="#" className="px-4 py-2 font-semibold">
               ABOUT US
             </a>
           </li>
-          <li>
+          <li ref={contactUs}>
             <a href="#" className="px-4 py-2 font-semibold">
               CONTACT US
             </a>
           </li>
         </ul>
 
-        <div id="hamburger" className="lg:hidden">
+        <div
+          ref={openNavLinks}
+          id="hamburger"
+          className="lg:hidden cursor-pointer"
+          onClick={() => setShow((prev) => !prev)}
+        >
           <svg
             width="24"
             height="24"

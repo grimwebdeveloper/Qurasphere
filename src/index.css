@@ -6,3 +6,7 @@
   background: transparent;
   color: transparent;
 }
+
+.first-impression {
+  min-height: calc(100vh - 81px);
+}
