@@ -53,7 +53,7 @@ function Navbar() {
       ); // Start slightly earlier for smooth overlap
     } else {
       tl.to(document.querySelector('body'), {
-        overflow: 'hidden',
+        overflowX: 'hidden',
       });
 
       // First hide nav items
@@ -80,10 +80,10 @@ function Navbar() {
   }, [show]); // 👈 Always pass dependencies to useEffect
 
   return (
-    <div className="border-b border-zinc-200">
+    <div className="lg:sticky top-0 z-50 backdrop-blur-md bg-blue-50">
       <nav
         id="navbar"
-        className="h-20 flex items-center justify-between px-2 max-w-[1280px] mx-auto"
+        className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
       >
         <a href="#" id="logo" className="flex items-center gap-1">
           <img src="logo.png" alt="logo" className="w-12" />
@@ -95,7 +95,7 @@ function Navbar() {
         <ul
           ref={navLinks}
           id="nav-links"
-          className="absolute lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white/50 lg:bg-transparent flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 backdrop-blur-[16px] backdrop-saturate-[180%] translate-x-full lg:translate-x-0 "
+          className="fixed lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white lg:bg-transparent flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 backdrop-blur-[16px] backdrop-saturate-[180%] translate-x-full lg:translate-x-0 z-[99]"
         >
           <li ref={closeNavLinks} onClick={() => setShow((prev) => !prev)}>
             <a href="#">
@@ -105,7 +105,7 @@ function Navbar() {
                 fill="none"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute top-0 right-0 h-20 mr-2 cursor-pointer lg:hidden"
+                className="absolute top-0 right-0 h-20 mr-2 sm:mr-8 cursor-pointer lg:hidden"
               >
                 {' '}
                 <path
