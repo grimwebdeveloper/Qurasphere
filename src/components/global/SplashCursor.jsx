@@ -2,20 +2,20 @@ import { useEffect, useRef } from 'react';
 
 function SplashCursor({
   // Add whatever props you like for customization
-  SIM_RESOLUTION = 128,
-  DYE_RESOLUTION = 1440,
-  CAPTURE_RESOLUTION = 512,
-  DENSITY_DISSIPATION = 3.5,
-  VELOCITY_DISSIPATION = 2,
-  PRESSURE = 0.1,
-  PRESSURE_ITERATIONS = 20,
-  CURL = 3,
-  SPLAT_RADIUS = 0.2,
-  SPLAT_FORCE = 6000,
-  SHADING = true,
-  COLOR_UPDATE_SPEED = 20,
-  BACK_COLOR = { r: 0.5, g: 0.5, b: 0 },
-  TRANSPARENT = true,
+  SIM_RESOLUTION = 64, // Reduced for better performance while maintaining quality
+  DYE_RESOLUTION = 1024, // Reduced from 1440 for better performance
+  CAPTURE_RESOLUTION = 256, // Reduced for better performance
+  DENSITY_DISSIPATION = 2.5, // Slightly reduced for smoother effect
+  VELOCITY_DISSIPATION = 1.5, // Reduced for more fluid motion
+  PRESSURE = 0.08, // Slightly reduced for better performance
+  PRESSURE_ITERATIONS = 16, // Reduced iterations for better performance
+  CURL = 2.5, // Slightly reduced for smoother effect
+  SPLAT_RADIUS = 0.15, // Reduced for more precise cursor effect
+  SPLAT_FORCE = 4000, // Reduced for more controlled effect
+  SHADING = true, // Kept for visual quality
+  COLOR_UPDATE_SPEED = 15, // Slightly reduced for better performance
+  BACK_COLOR = { r: 0.4, g: 0.4, b: 0 }, // Slightly darker for better contrast
+  TRANSPARENT = true, // Kept for background compatibility
 }) {
   const canvasRef = useRef(null);
 
