@@ -2,6 +2,7 @@ import Heading from './components/global/Heading';
 import Navbar from './components/global/Navbar';
 import ChooseUs from './components/home/ChooseUs';
 import Hero from './components/home/Hero';
+import OurWork from './components/home/OurWork';
 import Services from './components/home/Services';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       {/* <Heading title="Why Choose Us" tagline="Your vision, Our Code" /> */}
       <ChooseUs />
       <Services />
+      <OurWork />
     </div>
   );
 }
