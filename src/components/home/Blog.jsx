@@ -14,7 +14,7 @@ function Blog() {
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] w-full bg-white rounded-lg pb-4 lg:pb-0 lg:flex lg:flex-row-reverse"
+            className="shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] w-full rounded-lg pb-4 lg:pb-0 lg:flex lg:flex-row-reverse"
           >
             <img
               src="public\sampleBlog.jpg"

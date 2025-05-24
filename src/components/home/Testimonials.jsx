@@ -45,7 +45,7 @@ function Testimonials() {
             <SwiperSlide>
               <div
                 key={index}
-                className="text-center bg-zinc-50 rounded-lg py-12 lg:py-6 flex flex-col gap-8 px-2 lg:px-4"
+                className="text-center rounded-lg py-12 lg:py-6 flex flex-col gap-8 px-2 lg:px-4"
               >
                 {/* Client logo */}
                 <div className="flex items-center justify-center">

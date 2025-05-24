@@ -37,14 +37,9 @@
   z-index: -1;
 }
 
-
 .shiny-text {
   display: inline-block;
-  background: linear-gradient(
-    90deg,
-    #d4d4d8 0%,
-    #5900ff 100%
-  );
+  background: linear-gradient(90deg, #d4d4d8 0%, #5900ff 100%);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;
