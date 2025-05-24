@@ -1,7 +1,7 @@
 import Footer from './components/global/Footer';
 import Heading from './components/global/Heading';
 import Navbar from './components/global/Navbar';
-// import Blog from './components/home/Blog';
+import Blog from './components/home/Blog';
 import ChooseUs from './components/home/ChooseUs';
 import Hero from './components/home/Hero';
 import OurTeams from './components/home/OurTeams';
@@ -19,7 +19,7 @@ function App() {
       <Services />
       <OurWork />
       <Testimonials />
-      {/* <Blog /> */}
+      <Blog />
       <OurTeams />
       <Footer />
     </div>
