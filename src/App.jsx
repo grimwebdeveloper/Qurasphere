@@ -4,6 +4,7 @@ import ChooseUs from './components/home/ChooseUs';
 import Hero from './components/home/Hero';
 import OurWork from './components/home/OurWork';
 import Services from './components/home/Services';
+import Testimonials from './components/home/Testimonials';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ChooseUs />
       <Services />
       <OurWork />
+      <Testimonials />
     </div>
   );
 }
