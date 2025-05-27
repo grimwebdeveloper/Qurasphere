@@ -8,6 +8,8 @@ import OurTeams from './components/home/OurTeams';
 import OurWork from './components/home/OurWork';
 import Services from './components/home/Services';
 import Testimonials from './components/home/Testimonials';
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+
 
 function App() {
   return (
