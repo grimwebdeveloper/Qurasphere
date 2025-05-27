@@ -85,7 +85,22 @@ function Footer() {
           <a className="text-gray-400 hover:text-white text-sm" href="#">Terms of Service</a>
         </div>
       </div>
+<<<<<<< HEAD
     </footer>
+=======
+      <p className="text-center mt-4 text-lg font-semibold tracking-[2px]">
+        ©2025
+        <a
+          href="#"
+          className="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-violet-600 hover:text-blue-800 transition-colors"
+        >
+          {' '}
+          QuoraSphere{' '}
+        </a> 
+        | All Rights Reserved
+      </p>
+    </div>
+>>>>>>> features/hero
   );
 }
 

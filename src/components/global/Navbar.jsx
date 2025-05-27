@@ -80,15 +80,15 @@ function Navbar() {
   }, [show]); // 👈 Always pass dependencies to useEffect
 
   return (
-    <div className="top-0 z-50 backdrop-blur-md bg-blue-50">
+    <div className=" sticky top-0 z-50 backdrop-blur-md bg-blue-50 ">
       <nav
         id="navbar"
         className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
       >
         <a href="#" id="logo" className="flex items-center gap-1">
-          <img src="logo.png" alt="logo" className="w-12" />
-          <h1 className="hidden lg:block text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
-            QURASPHERE
+          <img src="logo.png" alt="logo" className="w-10" />
+          <h1 className="hidden lg:block text-xl pl-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
+            Qurasphere
           </h1>
         </a>
 
@@ -116,38 +116,23 @@ function Navbar() {
             </a>
           </li>
           <li ref={home}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              HOME
-            </a>
-          </li>
-          <li ref={servies}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              SERVICES
-            </a>
-          </li>
-          <li ref={caseStudies}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              CASE STUDIES
-            </a>
-          </li>
-          <li ref={ourTeams}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              OUR TEAMS
-            </a>
-          </li>
-          <li ref={blog}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              BLOG
+            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+              Home
             </a>
           </li>
           <li ref={aboutUs}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              ABOUT US
+            <a href="#" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
+              About Us
+            </a>
+          </li>
+          <li ref={servies}>
+            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+              Services
             </a>
           </li>
           <li ref={contactUs}>
-            <a href="#" className="px-4 py-2 font-semibold">
-              CONTACT US
+            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+              Contact Us
             </a>
           </li>
         </ul>
