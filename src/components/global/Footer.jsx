@@ -63,7 +63,7 @@ function Footer() {
         >
           {' '}
           QuoraSphere{' '}
-        </a>
+        </a> 
         | All Rights Reserved
       </p>
     </div>
