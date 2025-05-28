@@ -17,7 +17,7 @@ function Blog() {
             className="shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] w-full rounded-lg pb-4 lg:pb-0 lg:flex lg:flex-row-reverse"
           >
             <img
-              src="public\sampleBlog.jpg"
+              src="sampleBlog.jpg"
               alt=""
               className="rounded-t-lg lg:w-72 lg:rounded-tr-[0.5rem] lg:rounded-br-[0.5rem] lg:rounded-tl-[0rem] lg:rounded-bl-[0rem]"
             />
@@ -38,7 +38,7 @@ function Blog() {
               </p>
               {/* Uploader */}
               <div className="mt-16 flex gap-4 items-center">
-                <img src="public\sampleUser.png" alt="" className="w-12" />
+                <img src="sampleUser.png" alt="" className="w-12" />
                 <div className="flex flex-col justify-center leading-none gap-1">
                   <div className="font-semibold uppercase">Uploader Name</div>
                   <div className="italic text-zinc-600">1 January 2027</div>

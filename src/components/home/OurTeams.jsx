@@ -26,7 +26,7 @@ function OurTeams() {
             className="text-center shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow"
           >
             <div className="overflow-hidden relative bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 transition-all duration-300 rounded-t-lg">
-              <img src="public\member.png" alt="" className='hover:scale-110 transition-all duration-1000'/>
+              <img src="member.png" alt="" className='hover:scale-110 transition-all duration-1000'/>
               <svg
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"

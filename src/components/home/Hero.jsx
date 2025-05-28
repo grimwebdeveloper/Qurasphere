@@ -6,7 +6,7 @@ function Hero() {
       {/* Background image for mobile */}
       <div className="absolute inset-0 md:hidden opacity-30 z-0">
         <img
-          src="public/dimension.png"
+          src="dimension.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
@@ -51,7 +51,7 @@ function Hero() {
         {/* Image on right for desktop */}
         <div className="image-part w-full md:w-1/2 h-[300px] md:h-[600px] mt-6 md:mt-0 hidden md:block">
           <img
-            src="public/dimension.png"
+            src="dimension.png"
             alt="web solution"
             className="w-full h-full object-contain"
           />

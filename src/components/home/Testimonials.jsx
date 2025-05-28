@@ -49,7 +49,7 @@ function Testimonials() {
               >
                 {/* Client logo */}
                 <div className="flex items-center justify-center">
-                  <img src="public\sampleLogo.png" alt="" className="w-10" />
+                  <img src="sampleLogo.png" alt="" className="w-10" />
                   <div className="text-lg font-semibold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text">
                     Company Name
                   </div>
@@ -64,7 +64,7 @@ function Testimonials() {
                 {/* Client details */}
                 <div className="flex flex-col justify-center items-center">
                   <img
-                    src="public\sampleUser.png"
+                    src="sampleUser.png"
                     alt=""
                     className="w-12 mb-4"
                   />

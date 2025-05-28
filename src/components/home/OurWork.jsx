@@ -19,7 +19,7 @@ function OurWork() {
             className="w-[359px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg flex-grow"
           >
             <img
-              src="public\project.jpg"
+              src="project.jpg"
               alt="project"
               className="rounded-t-lg"
             />
