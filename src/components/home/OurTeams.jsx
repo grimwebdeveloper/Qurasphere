@@ -52,11 +52,11 @@ function OurTeams() {
     {
       name: "Tajdar",
       position: "Frontend Developer",
-      image: "",
+      image: "tajdar.jpg",
       social: {
-        linkedin: "https://linkedin.com/in/shaan",
-        gmail: "mailto:shaan@example.com",
-        twitter: "https://twitter.com/shaan",
+        linkedin: "",
+        gmail: "mailto:mdtajdaradil001@gmail.com",
+        twitter: "",
       },
     },
     {
