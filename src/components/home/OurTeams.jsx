@@ -3,12 +3,73 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaXTwitter,
-} from 'react-icons/fa6';
-import { LuPhoneCall } from 'react-icons/lu';
-import { SiGmail } from 'react-icons/si';
+} from "react-icons/fa6";
+import { LuPhoneCall } from "react-icons/lu";
+import { SiGmail } from "react-icons/si";
 
 function OurTeams() {
-  const members = [{}, {}, {}, {}];
+  const members = [
+    {
+      name: "Tauhid Raza",
+      position: "Frontend Developer",
+      image: "tauhid.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/mdtauhidraza/",
+        gmail: "mailto:tauhidr507@gmail.com",
+        twitter: "https://x.com/md_raza71452",
+      },
+    },
+    {
+      name: "Syed Saqlain ahmad",
+      position: "Full Stack Developer",
+      image: "saqlain.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/syed-saqlain-ahmad-a87b691b2",
+        gmail: "syedsaqlainahmad07@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Shadab Majid",
+      position: "Full Stack Drupal Developer",
+      image: "shadab.jpg",
+      social: {
+        linkedin: "http://www.linkedin.com/in/shadab-majid-7b068b244",
+        gmail: "mailto:shadabmajid13@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Minhaj Alam",
+      position: "Web Developer",
+      image: "minhaj.jpg",
+      social: {
+        linkedin: "https://www.linkedin.com/in/minhaj-alam875/",
+        gmail: "mailto:myminhajalam392@gmail.com",
+        twitter: "minhaj.jpg",
+      },
+    },
+    {
+      name: "Tajdar",
+      position: "Frontend Developer",
+      image: "tajdar.jpg",
+      social: {
+        linkedin: "",
+        gmail: "mailto:mdtajdaradil001@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Sharif Iqbal Jamil",
+      position: "Frontend Developer",
+      image: "sarif.png",
+      social: {
+        linkedin: "https://www.linkedin.com/in/grimwebdeveloper/",
+        gmail: "mailto:grimwebdeveloper@gmail.com",
+        twitter: "https://x.com/grimdeveloper",
+      },
+    },
+  ];
   return (
     <div className="px-2 sm:px-8 lg:flex gap-8 max-w-[1280px] mx-auto mb-16">
       <div className="text-center lg:text-left mb-6 lg:min-w-[310px]">
@@ -22,11 +83,16 @@ function OurTeams() {
       <div className="cards flex flex-wrap gap-8 justify-center">
         {members.map((member, index) => (
           <div
-            key={index}
-            className="text-center shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow"
+          key={index}
+          className="text-center shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow"
           >
-            <div className="overflow-hidden relative bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 transition-all duration-300 rounded-t-lg">
-              <img src="member.png" alt="" className='hover:scale-110 transition-all duration-1000'/>
+            
+            <div className=" w-full min-h-[300px] overflow-hidden relative bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 transition-all duration-300 rounded-t-lg">
+              <img
+                src={member.image}
+                alt=""
+                className=" w-full h-full hover:scale-110 transition-all duration-1000 object-scale-down"
+              />
               <svg
                 viewBox="0 0 200 200"
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,31 +105,22 @@ function OurTeams() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-2xl">Member Name</h3>
-            <p className="mt-1 italic text-zinc-600">
-              Position (Web Developer)
+            <h3 className="mt-8 text-2xl">{member.name}</h3>
+            <p className="mt-1 not-italic font-bold text-zinc-600">
+               {member.position}
             </p>
             <div
               id="member-social-links"
               className="flex justify-center gap-6 items-center my-8"
             >
-              <a href="#">
-                <FaLinkedinIn className="text-2xl" />
+              <a href={member.social.linkedin} title="LinkedinIn"  target="_blank">
+                <FaLinkedinIn className="text-2xl hover:transition delay-150 duration-300 ease-in-out hover:scale-125" />
               </a>
-              <a href="#">
-                <SiGmail className="text-2xl" />
+              <a href={member.social.gmail} title="Gmail"  target="_blank">
+                <SiGmail className="text-2xl hover:transition delay-150 duration-300 ease-in-out hover:scale-125" />
               </a>
-              <a href="#">
-                <LuPhoneCall className="text-2xl" />
-              </a>
-              <a href="#">
-                <FaXTwitter className="text-2xl" />
-              </a>
-              <a href="#">
-                <FaFacebookF className="text-2xl" />
-              </a>
-              <a href="#">
-                <FaInstagram className="text-2xl" />
+              <a href={member.social.twitter} title="XTwitter" target="_blank">
+                <FaXTwitter className="text-2xl hover:transition delay-150 duration-300 ease-in-out hover:scale-125" />
               </a>
             </div>
           </div>

@@ -8,6 +8,7 @@ import Hero from './components/home/Hero';
 import OurTeams from './components/home/OurTeams';
 import OurWork from './components/home/OurWork';
 import Services from './components/home/Services';
+import TechnologiesSlider from './components/home/TechnologiesSlider';
 import Testimonials from './components/home/Testimonials';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ function App() {
       {/* <Heading title="Why Choose Us" tagline="Your vision, Our Code" /> */}
       <ChooseUs />
       <Services />
+      {/* <TechnologiesSlider /> */}
       <OurWork />
       <Testimonials />
       <Blog />
