@@ -12,11 +12,11 @@ function ChooseUs() {
       </div>
       <div className="flex flex-col gap-4">
         <div className="flex items-center gap-4">
-          <div className="hidden h-full lg:flex justify-end items-center">
-            <LuBrainCircuit className="w-10 text-4xl text-blue-600" />
+          <div className="hidden h-full lg:flex justify-end items-center lg:mr-8">
+            <LuBrainCircuit className="w-10 text-9xl scale-150 text-blue-600" />
           </div>
           <div>
-            <h3 className="text-2xl flex items-center justify-start gap-4">
+            <h3 className="text-2xl flex items-center justify-start gap-4 font-semibold">
               Vision-Driven Collaboration
             </h3>
             <p className="text-lg mt-4 text-zinc-700">
@@ -27,12 +27,12 @@ function ChooseUs() {
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-6">
-            <div className="hidden h-full lg:flex justify-end items-center">
-              <LuBrainCircuit className="w-10 text-4xl text-blue-600" />
-            </div>
+          <div className="flex items-center gap-4">
+          <div className="hidden h-full lg:flex justify-end items-center lg:mr-8">
+            <LuBrainCircuit className="w-10 text-9xl scale-150 text-blue-600" />
+          </div>
             <div>
-              <h3 className="text-2xl flex items-center justify-start gap-4">
+              <h3 className="text-2xl flex items-center justify-start gap-4 font-semibold">
                 Strategy-Backed Development{' '}
               </h3>
               <p className="text-lg mt-4 text-zinc-700">
@@ -45,11 +45,11 @@ function ChooseUs() {
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4">
-            <div className="hidden h-full lg:flex justify-end items-center">
-              <LuBrainCircuit className="w-10 text-4xl text-blue-600" />
-            </div>
+          <div className="hidden h-full lg:flex justify-end items-center lg:mr-8">
+            <LuBrainCircuit className="w-10 text-9xl scale-150 text-blue-600" />
+          </div>
             <div>
-              <h3 className="text-2xl flex items-center justify-start gap-4">
+              <h3 className="text-2xl flex items-center justify-start gap-4 font-semibold">
                 Seamless, Transparent Process{' '}
               </h3>
               <p className="text-lg mt-4 text-zinc-700">
@@ -63,11 +63,11 @@ function ChooseUs() {
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-4">
-            <div className="hidden h-full lg:flex justify-end items-center">
-              <LuBrainCircuit className="w-10 text-4xl text-blue-600" />
-            </div>
+          <div className="hidden h-full lg:flex justify-end items-center lg:mr-8">
+            <LuBrainCircuit className="w-10 text-9xl scale-150 text-blue-600" />
+          </div>
             <div>
-              <h3 className="text-2xl flex items-center justify-start gap-4">
+              <h3 className="text-2xl flex items-center justify-start gap-4 font-semibold">
                 Innovation with Intent
               </h3>
               <p className="text-lg mt-4 text-zinc-700">
