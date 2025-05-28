@@ -90,7 +90,7 @@ function OurTeams() {
               <img
                 src={member.image}
                 alt=""
-                className=" w-full h-full hover:scale-110 transition-all duration-1000 object-scale-down"
+                className=" w-full h-full hover:scale-110 transition-all duration-1000 "
               />
               <svg
                 viewBox="0 0 200 200"
