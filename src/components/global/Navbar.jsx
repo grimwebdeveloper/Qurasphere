@@ -85,7 +85,7 @@ function Navbar() {
         id="navbar"
         className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
       >
-        <a href="#" id="logo" className="flex items-center gap-1">
+        <a href="#" id="logo" className="flex items-center gap-1 md:pl-2 pl-2">
           <img src="logo.png" alt="logo" className="w-10" />
           <h1 className="hidden lg:block text-xl pl-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
             Qurasphere
