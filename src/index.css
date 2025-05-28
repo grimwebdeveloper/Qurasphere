@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*::selection {
-  background: transparent;
-  color: transparent;
-}
-
 @media (min-width: 1024px) {
   .first-impression {
     min-height: calc(100vh - 81px);
