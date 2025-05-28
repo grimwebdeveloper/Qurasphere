@@ -1,3 +1,4 @@
+import ContactForm from './components/ContactForm';
 import Footer from './components/global/Footer';
 import Heading from './components/global/Heading';
 import Navbar from './components/global/Navbar';
@@ -23,6 +24,7 @@ function App() {
       <Testimonials />
       <Blog />
       <OurTeams />
+      <ContactForm/>
       <Footer />
     </div>
   );
