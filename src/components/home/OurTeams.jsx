@@ -3,70 +3,70 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaXTwitter,
-} from "react-icons/fa6";
-import { LuPhoneCall } from "react-icons/lu";
-import { SiGmail } from "react-icons/si";
+} from 'react-icons/fa6';
+import { LuPhoneCall } from 'react-icons/lu';
+import { SiGmail } from 'react-icons/si';
 
 function OurTeams() {
   const members = [
     {
-      name: "Tauhid Raza",
-      position: "Frontend Developer",
-      image: "tauhid.jpg",
+      name: 'Tauhid Raza',
+      position: 'Frontend Developer',
+      image: 'tauhid.jpg',
       social: {
-        linkedin: "https://www.linkedin.com/in/mdtauhidraza/",
-        gmail: "mailto:tauhidr507@gmail.com",
-        twitter: "https://x.com/md_raza71452",
+        linkedin: 'https://www.linkedin.com/in/mdtauhidraza/',
+        gmail: 'mailto:tauhidr507@gmail.com',
+        twitter: 'https://x.com/md_raza71452',
       },
     },
     {
-      name: "Syed Saqlain ahmad",
-      position: "Full Stack Developer",
-      image: "saqlain.jpg",
+      name: 'Syed Saqlain ahmad',
+      position: 'Full Stack Developer',
+      image: 'saqlain.png',
       social: {
-        linkedin: "https://www.linkedin.com/in/syed-saqlain-ahmad-a87b691b2",
-        gmail: "syedsaqlainahmad07@gmail.com",
-        twitter: "",
+        linkedin: 'https://www.linkedin.com/in/syed-saqlain-ahmad-a87b691b2',
+        gmail: 'syedsaqlainahmad07@gmail.com',
+        twitter: '',
       },
     },
     {
-      name: "Shadab Majid",
-      position: "Full Stack Drupal Developer",
-      image: "shadab.jpg",
+      name: 'Shadab Majid',
+      position: 'Full Stack Drupal Developer',
+      image: 'shadab.jpg',
       social: {
-        linkedin: "http://www.linkedin.com/in/shadab-majid-7b068b244",
-        gmail: "mailto:shadabmajid13@gmail.com",
-        twitter: "",
+        linkedin: 'http://www.linkedin.com/in/shadab-majid-7b068b244',
+        gmail: 'mailto:shadabmajid13@gmail.com',
+        twitter: '',
       },
     },
     {
-      name: "Minhaj Alam",
-      position: "Web Developer",
-      image: "minhaj.jpg",
+      name: 'Minhaj Alam',
+      position: 'Web Developer',
+      image: 'minhaj.jpg',
       social: {
-        linkedin: "https://www.linkedin.com/in/minhaj-alam875/",
-        gmail: "mailto:myminhajalam392@gmail.com",
-        twitter: "minhaj.jpg",
+        linkedin: 'https://www.linkedin.com/in/minhaj-alam875/',
+        gmail: 'mailto:myminhajalam392@gmail.com',
+        twitter: 'minhaj.jpg',
       },
     },
     {
-      name: "Tajdar",
-      position: "Frontend Developer",
-      image: "tajdar.jpg",
+      name: 'Tajdar',
+      position: 'Frontend Developer',
+      image: 'tajdar.jpg',
       social: {
-        linkedin: "",
-        gmail: "mailto:mdtajdaradil001@gmail.com",
-        twitter: "",
+        linkedin: '',
+        gmail: 'mailto:mdtajdaradil001@gmail.com',
+        twitter: '',
       },
     },
     {
-      name: "Sharif Iqbal Jamil",
-      position: "Frontend Developer",
-      image: "sarif.png",
+      name: 'Sharif Iqbal Jamil',
+      position: 'Frontend Developer',
+      image: 'sarif.png',
       social: {
-        linkedin: "https://www.linkedin.com/in/grimwebdeveloper/",
-        gmail: "mailto:grimwebdeveloper@gmail.com",
-        twitter: "https://x.com/grimdeveloper",
+        linkedin: 'https://www.linkedin.com/in/grimwebdeveloper/',
+        gmail: 'mailto:grimwebdeveloper@gmail.com',
+        twitter: 'https://x.com/grimdeveloper',
       },
     },
   ];
@@ -77,16 +77,15 @@ function OurTeams() {
           Our Teams
         </h2>
         <p className="text-lg mt-2 italic text-zinc-600 shiny-text">
-          Your vision, Our Code
+          Meet the Minds Behind the Magic
         </p>
       </div>
       <div className="cards flex flex-wrap gap-8 justify-center">
         {members.map((member, index) => (
           <div
-          key={index}
-          className="text-center shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow"
+            key={index}
+            className="text-center shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow"
           >
-            
             <div className=" w-full min-h-[300px] overflow-hidden relative bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700 transition-all duration-300 rounded-t-lg">
               <img
                 src={member.image}
@@ -105,18 +104,22 @@ function OurTeams() {
                 />
               </svg>
             </div>
-            <h3 className="mt-8 text-2xl">{member.name}</h3>
-            <p className="mt-1 not-italic font-bold text-zinc-600">
-               {member.position}
+            <h3 className="mt-8 text-2xl font-semibold">{member.name}</h3>
+            <p className="mt-1 not-italic font-semibold text-zinc-600">
+              {member.position}
             </p>
             <div
               id="member-social-links"
               className="flex justify-center gap-6 items-center my-8"
             >
-              <a href={member.social.linkedin} title="LinkedinIn"  target="_blank">
+              <a
+                href={member.social.linkedin}
+                title="LinkedinIn"
+                target="_blank"
+              >
                 <FaLinkedinIn className="text-2xl hover:transition delay-150 duration-300 ease-in-out hover:scale-125" />
               </a>
-              <a href={member.social.gmail} title="Gmail"  target="_blank">
+              <a href={member.social.gmail} title="Gmail" target="_blank">
                 <SiGmail className="text-2xl hover:transition delay-150 duration-300 ease-in-out hover:scale-125" />
               </a>
               <a href={member.social.twitter} title="XTwitter" target="_blank">
