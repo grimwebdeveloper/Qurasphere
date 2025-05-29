@@ -1,6 +1,7 @@
-import React from 'react';
 import { IoMdMail } from 'react-icons/io';
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import Form from './home/Form';
+
 
 function ContactForm() {
   return (
@@ -38,65 +39,7 @@ function ContactForm() {
           </ul>
         </div>
         <div className="pb-16 lg:w-1/2">
-          <form className="flex flex-col justify-center gap-8">
-            <div className="flex flex-col justify-center gap-2">
-              <label className="pl-1" htmlFor="name">
-                Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter your full name"
-                className="bg-transparent border-b-[1px] border-zinc-600 focus:outline-none focus:border-blue-600 pl-1 pb-1"
-                required
-              />
-            </div>
-            <div className="flex flex-col justify-center gap-2">
-              <label className="pl-1" htmlFor="email">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter your email address"
-                className="bg-transparent border-b-[1px] border-zinc-600 focus:outline-none focus:border-blue-600 pl-1 pb-1"
-                required
-              />
-            </div>
-            <div className="flex flex-col justify-center gap-2">
-              <label className="pl-1" htmlFor="number">
-                Mobile Number
-              </label>
-              <input
-                type="number"
-                name="number"
-                id="number"
-                placeholder="Enter your mobile number"
-                className="bg-transparent border-b-[1px] border-zinc-600 focus:outline-none focus:border-blue-600 pl-1 pb-1"
-                required
-              />
-            </div>
-            <div className="flex flex-col justify-center gap-2">
-              <label className="pl-1" htmlFor="message">
-                Message
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Tell us what you need"
-                className="bg-transparent border-b-[1px] border-zinc-600 focus:outline-none focus:border-blue-600 pl-1 pb-1"
-                rows={1}
-              />
-            </div>
-            <button
-              type="button"
-              className="ml-1 mt-16 lg:mt-8 outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect md:ml-0"
-            >
-              Submit
-            </button>
-          </form>
+          <Form />
         </div>
       </section>
     </>

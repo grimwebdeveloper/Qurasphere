@@ -17,6 +17,7 @@ import Service from './pages/Service';
 import ContactUs from './pages/ContactUs';
 import Layout from './components/Layout';
 
+import WorkingShowcase from './components/home/WorkingShowcase';
 
 
 function App() {
