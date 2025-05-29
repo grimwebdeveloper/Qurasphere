@@ -8,7 +8,7 @@ function ChooseUs() {
         <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text">
           Philosopy Behind Our Process
         </h2>
-        <p className="text-lg mt-2 italic text-zinc-600">
+        <p className="text-lg mt-2 italic text-zinc-600 shiny-text">
           Your vision, Our Code
         </p>
       </div>
