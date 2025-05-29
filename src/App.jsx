@@ -7,7 +7,7 @@ import ChooseUs from './components/home/ChooseUs';
 import Hero from './components/home/Hero';
 import OurTeams from './components/home/OurTeams';
 import OurWork from './components/home/OurWork';
-import Services from './components/home/Services';
+// import Services from './components/home/Services';
 import TechnologiesSlider from './components/home/TechnologiesSlider';
 import Testimonials from './components/home/Testimonials';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
@@ -16,9 +16,6 @@ import AboutUs from './pages/AboutUs';
 import Service from './pages/Service';
 import ContactUs from './pages/ContactUs';
 import Layout from './components/Layout';
-
-import WorkingShowcase from './components/home/WorkingShowcase';
-
 
 function App() {
   return (
