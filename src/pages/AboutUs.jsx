@@ -19,7 +19,7 @@ function AboutUs() {
         twitter: 'https://x.com/md_raza71452',
       },
     },
-    {``
+    {
       name: 'Syed Saqlain Ahmad',
       position: 'Full Stack Developer',
       image: 'saqlain.png',
@@ -130,8 +130,8 @@ function AboutUs() {
           </div>
         ))}
       </div>
-    </div>
-
+      </div>
+     </div>
      
   
     </>
