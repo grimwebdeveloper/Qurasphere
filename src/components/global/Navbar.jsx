@@ -1,4 +1,5 @@
 import { useGSAP } from '@gsap/react';
+import { Link } from "react-router-dom";
 import gsap from 'gsap';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -116,24 +117,24 @@ function Navbar() {
             </a>
           </li>
           <li ref={home}>
-            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+            <Link to="/" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
               Home
-            </a>
+            </Link>
           </li>
           <li ref={aboutUs}>
-            <a href="#" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
+            <Link to="/about-us" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
               About Us
-            </a>
+            </Link>
           </li>
           <li ref={servies}>
-            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+            <Link to="/services" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
               Services
-            </a>
-          </li>
+            </Link>
+         </li>
           <li ref={contactUs}>
-            <a href="#" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+            <Link to="/contact-us" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
 
