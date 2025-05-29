@@ -11,6 +11,7 @@ import Services from './components/home/Services';
 import TechnologiesSlider from './components/home/TechnologiesSlider';
 import Testimonials from './components/home/Testimonials';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import WorkingShowcase from './components/home/WorkingShowcase';
 
 
 function App() {
@@ -18,13 +19,14 @@ function App() {
     <div>
       <Navbar />
       <Hero />
+      <WorkingShowcase />
       {/* <Heading title="Why Choose Us" tagline="Your vision, Our Code" /> */}
       <ChooseUs />
       <Services />
       {/* <TechnologiesSlider /> */}
       <OurWork />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <OurTeams />
       <ContactForm/>
       <Footer />

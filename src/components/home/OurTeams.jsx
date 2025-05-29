@@ -20,7 +20,7 @@ function OurTeams() {
       },
     },
     {
-      name: 'Syed Saqlain ahmad',
+      name: 'Syed Saqlain Ahmad',
       position: 'Full Stack Developer',
       image: 'saqlain.png',
       social: {
