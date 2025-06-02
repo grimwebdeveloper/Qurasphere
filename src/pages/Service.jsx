@@ -61,7 +61,7 @@ function Service() {
           Our Services
         </h2>
         <div className="text-2xl lg:text-3xl font-medium text-blue-600 mb-6">
-          Meet the Minds Behind the Magic
+          Services that needs your business
         </div>
         <p className="text-lg lg:text-xl text-zinc-600 max-w-3xl">
           We offer a comprehensive range of web development and design services

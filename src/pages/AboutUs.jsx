@@ -79,7 +79,7 @@ function AboutUs() {
       <div className="max-w-screen-xl px-8 mx-auto py-16 lg:py-24">
         <h2 className="text-4xl lg:text-5xl font-semibold mb-4">About Us</h2>
         <div className="text-2xl lg:text-3xl font-medium text-blue-600 mb-6">
-          Meet the Minds Behind the Magic
+          Meet the minds behind the magic
         </div>
         <p className="text-lg lg:text-xl text-zinc-600 max-w-3xl">
           We're dedicated to delivering innovative web solutions with a modern
