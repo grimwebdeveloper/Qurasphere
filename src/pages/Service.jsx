@@ -71,7 +71,7 @@ function Service() {
              <div className=" w-80 md:w-64">
                <img src="project.jpg" alt="" className='rounded-t-lg' />
                <div className=" bg-gray-200 rounded-b-lg">
-                <h5 className=" px-3 py-1 text-2xl font-medium">Card title</h5>
+                <h5 className=" px-3 py-1 text-2xl font-medium">{cardsData[index].title}</h5>
                 <p className="px-3 py-2  font-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
              <a href="#" className="px-3 pb-6 block font-normal text-blue-500">Go somewhere</a>
             </div>
