@@ -11,7 +11,7 @@ function WorkingShowcase() {
         <div className="bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text text-xl mt-2">Issue Solved</div>
       </div>
       <div className="w-[168px]">
-        <div className="font-semibold text-6xl">7+</div>
+        <div className="font-semibold text-6xl">5+</div>
         <div className="bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text text-xl mt-2">Years in Experience</div>
       </div>
     </div>

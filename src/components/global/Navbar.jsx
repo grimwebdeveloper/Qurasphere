@@ -129,11 +129,11 @@ function Navbar() {
               Services
             </Link>
          </li>
-         <li ref={aboutUs}>
+         {/* <li ref={aboutUs}>
             <Link to="/our-work" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
               Our Work
             </Link>
-          </li>
+          </li> */}
          <li ref={aboutUs}>
             <Link to="/about-us" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
               About Us
