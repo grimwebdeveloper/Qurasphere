@@ -96,7 +96,7 @@ function Form() {
       </div>
       <button
         type="submit"
-        className="ml-1 mt-16 lg:mt-8 outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect md:ml-0"
+        className="ml-1 mt-16 lg:mt-8 outline outline-1 outline-blue-600 px-6 py-3 max-w-36 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect md:ml-0"
       >
         Submit
       </button>
