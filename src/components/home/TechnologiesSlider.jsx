@@ -24,7 +24,7 @@ function TechnologiesSlider() {
     { title: "Ionic", url: "ionic.png" },
     { title: "TanQuery", url: "tanquery.png" },
     { title: "JavaScript", url: "javascript.png" },
-    { title: "Express", url: "express.png" },
+    { title: "Express", url: "expressjs.webp" },
     { title: "REST API", url: "restapi.png" },
     { title: "PHP", url: "php.png" },
     { title: "Redux", url: "redux.png" },
