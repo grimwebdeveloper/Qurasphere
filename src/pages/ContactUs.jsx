@@ -10,7 +10,7 @@ function ContactUs() {
           Whether you have a question, a bold idea, or you're ready to start your next project—we’re here for it. Reach out and let’s make something incredible together. Your next move starts with a simple hello.
         </p>
         <div className="flex justify-center mx-auto max-w-screen-xl py-16">
-          <img src="public/contactbg2.png" className="image-part w-full md:w-1/2  md:h-full mt-6 md:mt-0 md:opacity-100 md:block" alt="" />
+          <img src="contactbg2.png" className="image-part w-full md:w-1/2  md:h-full mt-6 md:mt-0 md:opacity-100 md:block" alt="" />
         </div>
     </div>
     <ContactForm />
