@@ -1,6 +1,5 @@
 import Hero from "../components/home/Hero"
 import ChooseUs from "../components/home/ChooseUs"
-import TechnologiesSlider from '../components/home/TechnologiesSlider'
 import OurWork from '../components/home/OurWork'
 import Services from '../components/home/Services'
 import ContactForm from '../components/ContactForm';
@@ -18,4 +17,4 @@ function Home() {
     </>
   )  
 }
-export default Home
+export default Home;

@@ -241,6 +241,6 @@ function AboutUs() {
 
       <ContactForm />
     </>
-  )
+  );
 }
-export default AboutUs
+export default AboutUs;

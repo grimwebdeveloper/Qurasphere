@@ -1,8 +1,18 @@
 function OurWork() {
-  const works = [{}, {}, {}, {}];
+  const works = [
+    {
+      projectName: 'Neuralit',
+      projectDetail:
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim delectus nemo.',
+      projectImg: 'neuralit.png',
+    },
+    {},
+    {},
+    {},
+  ];
   return (
     <div className="px-8 lg:flex gap-8 max-w-[1280px] mx-auto mb-16">
-      <div className="text-center lg:text-left mb-6 lg:min-w-[310px]">
+      <div className="lg:text-left mb-6 lg:min-w-[310px]">
         <h2 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-violet-600 text-transparent bg-clip-text">
           Our Work
         </h2>
@@ -13,54 +23,14 @@ function OurWork() {
       <div className="cards flex flex-wrap gap-8 justify-center">
         {works.map((work, index) => (
           <a
-            href="$"
+            href="#"
             key={index}
-            id="card"
-            className="w-[359px] shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg flex-grow"
+            className="text-center overflow-hidden shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg w-[359px] lg:w-[275px] flex-grow relative"
           >
-            <img
-              src="project.jpg"
-              alt="project"
-              className="rounded-t-lg"
-            />
-            <div id="card-content" className="p-4 flex flex-col gap-4">
-              <h3 className="font-semibold text-2xl italic tracking-[2px] mb-4">
-                Project Name
-              </h3>
-              <p className="text-lg leading-[32px]">
-                <span className="text-red-600 font-semibold italic tracking-[2px]">
-                  Requirements:{' '}
-                </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                impedit! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Ipsa, impedit!
-              </p>
-              <p className="text-lg leading-[32px]">
-                <span className="text-red-600 font-semibold italic tracking-[2px]">
-                  Technologies Used:{' '}
-                </span>
-                Lorem ipsum dolor sit
-              </p>
-              <p className="text-lg leading-[32px]">
-                <span className="text-red-600 font-semibold italic tracking-[2px]">
-                  Our Role:{' '}
-                </span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                impedit! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Ipsa, impedit!
-              </p>
-              <p className="text-lg leading-[32px]">
-                <span className="text-red-600 font-semibold italic tracking-[2px]">
-                  Duration:{' '}
-                </span>
-                <span className="text-green-600">1 Month</span>
-              </p>
-              <p className="text-lg leading-[32px]">
-                <span className="text-red-600 font-semibold italic tracking-[2px]">
-                  Review:{' '}
-                </span>
-                <span className="text-green-600">4.9 / 5.0</span>
-              </p>
+            <img src={work.projectImg} alt="" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-violet-600 opacity-0 hover:opacity-100 w-full h-full flex flex-col gap-6 justify-center items-center p-6 text-white transition-all duration-300 ease-in-out">
+              <div className="text-4xl font-semibold">{work.projectName}</div>
+              <p className="text-lg">{work.projectDetail}</p>
             </div>
           </a>
         ))}

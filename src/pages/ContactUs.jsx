@@ -17,4 +17,5 @@ function ContactUs() {
     </>
   )
 }
-export default ContactUs
+
+export default ContactUs;

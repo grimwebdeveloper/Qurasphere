@@ -51,7 +51,6 @@
   }
 }
 
-
 @keyframes infinite-scroll-left {
   0% {
     transform: translateX(-5%);
