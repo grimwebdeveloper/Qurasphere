@@ -24,8 +24,8 @@ function Hero() {
             On&nbsp;
             <ReactTyped
               strings={["Time", "Budget", "Point"]}
-              typeSpeed={140}
-              backSpeed={80}
+              typeSpeed={200}
+              backSpeed={100}
               loop={true}
               showCursor={false}
             />
@@ -40,11 +40,11 @@ function Hero() {
 
           <div className="flex justify-start md:justify-start">
             <button
-          type="button"
-          className="md:ml-10 md:mt-2 ml-1 mt-3 outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect "
-        >
-          View Our Work
-        </button>
+              type="button"
+              className="md:ml-10 md:mt-2 ml-1 mt-3 outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect "
+            >
+            View Our Work
+            </button>
           </div>
         </div>
 

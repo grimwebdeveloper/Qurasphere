@@ -33,7 +33,7 @@ function ContactForm() {
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-lg text-blue-600" />
               <span className="hover:text-blue-600 transition-colors">
-                Bariyatu, Ranchi
+                Bariatu, Ranchi
               </span>
             </li>
           </ul>

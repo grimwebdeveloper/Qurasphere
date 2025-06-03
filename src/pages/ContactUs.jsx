@@ -1,22 +1,21 @@
-import ContactForm from '../components/ContactForm';
-
+import Banner from "../components/global/Banner"
+import ContactForm from "../components/ContactForm"
 function ContactUs() {
   return (
     <>
-      <div className="max-w-screen-xl px-8 mx-auto py-16 lg:py-24">
-        <h2 className="text-4xl lg:text-5xl font-semibold mb-4">Contact Us</h2>
-        <div className="text-2xl lg:text-3xl font-medium text-blue-600 mb-6">
-          Get in touch with us
-        </div>
-        <p className="text-lg lg:text-xl text-zinc-600 max-w-3xl">
-          Have a question or want to work together? We'd love to hear from you.
-          Fill out the form below and we'll get back to you as soon as possible.
+    <Banner bannerText={'Contact Us'} />
+    <div className="py-16 text-center max-w-screen-xl mx-auto px-8">
+      <h2 className="text-4xl lg:text-5xl font-semibold mb-6">We’d love to hear from you</h2>
+        <p className="text-lg lg:text-xl text-zinc-600 max-w-4xl mx-auto">
+          Whether you have a question, a bold idea, or you're ready to start your next project—we’re here for it. Reach out and let’s make something incredible together. Your next move starts with a simple hello.
         </p>
-      </div>
-
-      <ContactForm />
+        <div className="flex justify-center mx-auto max-w-screen-xl py-16">
+          <img src="public/contactbg2.png" className="image-part w-full md:w-1/2  md:h-full mt-6 md:mt-0 md:opacity-100 md:block" alt="" />
+        </div>
+    </div>
+    <ContactForm />
     </>
-  );
+  )
 }
 
 export default ContactUs;
