@@ -1,9 +1,9 @@
-import { servicesData } from "../../data/servicesData";
+import { servicesDataHome } from "../../data/servicesData";
 import ServiceCard from "../ServiceCard";
 
 
 function Services() {
-  const services = servicesData
+  const services = servicesDataHome
   return (
     <div className="px-8 lg:flex gap-8 max-w-[1280px] mx-auto pb-16">
       <div className="lg:text-left text-center mb-6 lg:min-w-[310px]">
