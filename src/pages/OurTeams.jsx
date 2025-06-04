@@ -1,4 +1,4 @@
-function OurTeams() {
+function AboutUs() {
   return (
     <div>OurTeams</div>
   )

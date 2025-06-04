@@ -1,20 +1,20 @@
+import Hero from "../components/home/Hero"
+import ChooseUs from "../components/home/ChooseUs"
+import OurWork from '../components/home/OurWork'
+import Services from '../components/home/Services'
 import ContactForm from '../components/ContactForm';
-import ChooseUs from '../components/home/ChooseUs';
-import Hero from '../components/home/Hero';
-import OurTeams from '../components/home/OurTeams';
-import OurWork from '../components/home/OurWork';
-import Services from '../components/home/Services';
+import WorkingShowcase from "../components/home/WorkingShowcase"
 
 function Home() {
   return (
     <>
-      <Hero />
+      <Hero /> 
       <ChooseUs />
+      <WorkingShowcase/>
       <Services />
       <OurWork />
-      <OurTeams />
-      <ContactForm />
+      <ContactForm/>
     </>
-  );
+  )  
 }
 export default Home;

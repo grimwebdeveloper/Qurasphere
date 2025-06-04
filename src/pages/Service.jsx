@@ -1,115 +1,65 @@
+import Navbar from '../components/global/Navbar';
+import Footer from '../components/global/Footer';
+import Card from '../components/global/Card';
 import ContactForm from '../components/ContactForm';
+import ServiceCard from '../components/ServiceCard';
+import { servicesData } from "../data/servicesData";
+import Banner from '../components/global/Banner';
+import TechnologiesSlider from '../components/home/TechnologiesSlider'
 
 function Service() {
-  const servicesData = [
-    {
-      serviceName: 'Web Design (Figma & UI/UX)',
-      description: `Our design team brings your vision to life with pixel-perfect
-                Figma designs. Every layout is crafted for user experience,
-                brand identity, and conversion.`,
-      serviceImage: 'figma.png',
-    },
-    {
-      serviceName: 'Frontend Development',
-      description: `We build stunning, fast, and interactive front-end interfaces using
-            the latest web technologies like React, Tailwind, and more. Whether
-            it's a landing page or a full SPA, our code is clean, responsive,
-            and user-focused.`,
-      serviceImage: 'javascript.png',
-    },
-    {
-      serviceName: 'Custom Web Development',
-      description: `We build tailor-made websites and web apps from scratch using modern
-            stacks. Fully responsive, optimized for SEO and performance — built
-            exactly how you want it.`,
-      serviceImage: 'react.png',
-    },
-    {
-      serviceName: 'Custom Web Applications',
-      description: `Need something beyond a website? Our team builds interactive web
-            apps — dashboards, tools, SaaS platforms — with smart features and
-            scalable architecture.`,
-      serviceImage: 'redux.png',
-    },
-    {
-      serviceName: 'MERN Stack Development',
-      description: `From concept to deployment, we handle full-stack web apps with
-            MongoDB, Express, React, and Node.js. Our MERN experts build
-            scalable, secure, and high-performance apps tailored to your
-            business goals.`,
-      serviceImage: 'mern.png',
-    },
-    {
-      serviceName: 'WordPress Development',
-      description: `From custom themes to plugin integration, we turn WordPress into a
-            powerful business tool. Whether it's a blog, business site, or
-            e-commerce store — we deliver speed, SEO, and simplicity.`,
-      serviceImage: 'wordpress.png',
-    },
-    {
-      serviceName: 'Drupal Development',
-      description: `For enterprise-grade CMS solutions, our Drupal developers create
-            secure, modular, and scalable websites. From government to corporate
-            needs — we've done it all with Drupal.`,
-      serviceImage: 'drupal.png',
-    },
-  ];
   return (
+<<<<<<<<< Temporary merge branch 1
     <div className="min-h-screen">
+      <div className="max-w-screen-xl px-8 mx-auto py-16 lg:py-24">
+        <h2 className="text-4xl lg:text-5xl font-semibold mb-4">
+          Our Services
+        </h2>
+        <div className="text-2xl lg:text-3xl font-medium text-blue-600 mb-6">
+          Services that needs your business
+=========
+    <>
+     <div className='w-full bg-gradient-to-r from-blue-600 to-violet-600 text-white '>
+         <div className='max-w-[1280px]  min-h-80 mx-auto  flex justify-center items-center '>
+           <h1 className='text-4xl font-semibold'>Our services</h1>
+         </div>
+      
+     </div>
+     <div className='w-full'>
+        <div className='max-w-[1280px] mx-auto mt-8 md:mt-24 mb-24 flex justify-center gap-7 gap-y-9 flex-wrap'>
+          {cardsData.map((_, index) => (   
+            
+             <div className=" w-80 md:w-64">
+               <img src="project.jpg" alt="" className='rounded-t-lg' />
+               <div className=" bg-gray-200 rounded-b-lg">
+                <h5 className=" px-3 py-1 text-2xl font-medium">{cardsData[index].title}</h5>
+                <p className="px-3 py-2  font-normal">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+             <a href="#" className="px-3 pb-6 block font-normal text-blue-500">Go somewhere</a>
+            </div>
+           </div>
+           ))}
+
+
+            
+>>>>>>>>> Temporary merge branch 2
+        </div>
+        <p className="text-lg lg:text-xl text-zinc-600 max-w-3xl">
+          We offer a comprehensive range of web development and design services
+          to help your business thrive in the digital world.
+        </p>
+      </div>
 
       {/* <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicesData.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="p-6">
-                <div
-                  className="w-16 h-16 mb-4 bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage: `url(/images/${service.serviceImage})`,
-                  }}
-                  role="img"
-                  aria-label={service.serviceName}
-                />
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  {service.serviceName}
-                </h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            </div>
+            <ServiceCard key={index} service={service}/>
           ))}
         </div>
-      </div> */}
-
-      <div className="px-8 py-16 max-w-screen-xl mx-auto">
-        <div id="cards" className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {servicesData.map((service, index) => (
-            <div
-              key={index}
-              className="shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] rounded-lg p-6 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                {/* <img 
-                  src={service.serviceImage} 
-                  alt={service.serviceName}
-                  className="w-16 h-16 object-contain"
-                /> */}
-                <h2 className="text-2xl font-semibold text-gray-800 mb-6">
-                  {service.serviceName}
-                </h2>
-              </div>
-              <p className="text-gray-600 leading-relaxed">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
+        <TechnologiesSlider />
       </div>
-
       <ContactForm />
-    </div>
-  );
+
+    </>
+  )
 }
 export default Service;

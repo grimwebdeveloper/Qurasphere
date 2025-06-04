@@ -51,10 +51,20 @@
   }
 }
 
+@keyframes infinite-scroll-left {
+  0% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-/* Debug */
-/* *,
-*::before,
-*::after {
-  outline: 1px solid black;
-} */
+@keyframes infinite-scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}

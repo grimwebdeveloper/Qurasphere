@@ -86,17 +86,17 @@ function Navbar() {
         id="navbar"
         className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
       >
-        <a href="#" id="logo" className="flex items-center gap-1 md:pl-2 pl-2">
+        <Link to={'/'} id="logo" className="flex items-center gap-1 md:pl-2 pl-2">
           <img src="logo.png" alt="logo" className="w-10" />
           <h1 className="hidden lg:block text-xl pl-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
             Qurasphere
           </h1>
-        </a>
+        </Link>
 
         <ul
           ref={navLinks}
           id="nav-links"
-          className="fixed lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white lg:bg-transparent flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 backdrop-blur-[16px] backdrop-saturate-[180%] translate-x-full lg:translate-x-0 z-[99]"
+          className="fixed lg:static top-0 right-0 h-screen lg:h-auto w-[75%] lg:w-auto bg-white lg:bg-[#eff6ff] flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-0 backdrop-blur-[16px] backdrop-saturate-[180%] translate-x-full lg:translate-x-0 z-[99]"
         >
           <li ref={closeNavLinks} onClick={() => setShow((prev) => !prev)}>
             <a href="#">
@@ -125,18 +125,17 @@ function Navbar() {
             </Link>
           </li>
           <li ref={servies}>
-            <Link
-              to="/services"
-              className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"
-            >
+            <Link to="/services" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
               Services
             </Link>
-          </li>
-          <li ref={aboutUs}>
-            <Link
-              to="/about-us"
-              className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize"
-            >
+         </li>
+         {/* <li ref={aboutUs}>
+            <Link to="/our-work" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
+              Our Work
+            </Link>
+          </li> */}
+         <li ref={aboutUs}>
+            <Link to="/about-us" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
               About Us
             </Link>
           </li>
