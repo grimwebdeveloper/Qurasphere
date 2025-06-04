@@ -39,6 +39,7 @@ function Navbar() {
         translateX: 0,
         opacity: 1,
         duration: 1,
+        // display: 'none',
       });
 
       // Then animate nav items
@@ -72,6 +73,7 @@ function Navbar() {
           translateX: '100%',
           opacity: 0,
           duration: 1,
+          // display: 'flex'
         },
         '-=0.4'
       ); // Overlap for smooth exit

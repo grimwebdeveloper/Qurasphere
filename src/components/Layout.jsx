@@ -5,9 +5,11 @@ import Footer from './global/Footer';
 const Layout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <div className="overflow-x-hidden">
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
     </>
   );
 };
