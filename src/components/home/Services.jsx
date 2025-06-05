@@ -14,7 +14,7 @@ function Services() {
           Your vision, Our Code 
         </p>
       </div>
-      <div className="flex gap-8 flex-wrap">
+      <div className="flex gap-8 flex-wrap justify-center">
         {services.map((service, index) => (   
             // <div>{service.description},{service.serviceName}</div>
             <ServiceCard key={index} service={service}/>

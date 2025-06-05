@@ -83,4 +83,18 @@ export const servicesDataHome = [
           needs — we’ve done it all with Drupal.`,
     serviceImage: 'drupal.png',
   },
+  {
+    serviceName: 'WordPress Development',
+    description: `From custom themes to plugin integration, we turn WordPress into a
+          powerful business tool. Whether it's a blog, business site, or
+          e-commerce store — we deliver speed, SEO, and simplicity.`,
+    serviceImage: 'wordpress.png',
+  },
+  {
+    serviceName: 'Drupal Development',
+    description: `For enterprise-grade CMS solutions, our Drupal developers create
+          secure, modular, and scalable websites. From government to corporate
+          needs — we’ve done it all with Drupal.`,
+    serviceImage: 'drupal.png',
+  },
 ];
