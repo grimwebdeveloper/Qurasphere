@@ -17,6 +17,7 @@ function Navbar() {
   const blog = useRef(null);
   const aboutUs = useRef(null);
   const contactUs = useRef(null);
+  const ourWork = useRef(null);
 
   useEffect(() => {
     if (window.innerWidth >= 1024) return; // Only trigger for mobile
@@ -29,6 +30,7 @@ function Navbar() {
       blog.current,
       aboutUs.current,
       contactUs.current,
+      ourWork.current,
     ];
 
     const tl = gsap.timeline({ defaults: { ease: 'expo.inOut' } });
@@ -153,6 +155,16 @@ function Navbar() {
             </Link>
           </li>
           <li ref={contactUs} onClick={() => setShow(false)}>
+           <li ref={ourWork}>
+            <Link
+              to="/our-work"
+              className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"
+            >
+              Our Work
+            </Link>
+           </li>
+          </li>
+          <li ref={contactUs}>
             <Link
               to="/contact-us"
               className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"

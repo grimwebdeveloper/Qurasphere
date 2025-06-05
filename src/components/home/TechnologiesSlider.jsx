@@ -33,7 +33,7 @@ function TechnologiesSlider() {
   ]
 
   return (
-    <div className="mx-auto bg-zinc-200 py-16 text-center flex justify-center flex-col items-center ">
+    <div className="mx-auto bg-zinc-200 py-16 text-center flex justify-center flex-col items-center bg-gradient-to-r to-blue-100 from-violet-100">
       <div className=' grid text-2xl md:4xl font-medium mx-auto text-center px-8'>
         <h1 className='font-semibold text-4xl pb-6'>Technologies We Work With</h1>
         <h3 className='text-zinc-600 text-xl max-w-5xl text-center mx-auto'>Our services are crafted to deliver real results, Whether you're launching a new project or expanding an existing one, our dedicated team is committed to delivering your vision with expertise, reliability, and innovation.</h3>
