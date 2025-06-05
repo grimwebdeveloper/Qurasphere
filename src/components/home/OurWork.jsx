@@ -73,14 +73,10 @@ function OurWork() {
               alt="project"
               className="rounded-t-lg"
             />
-<<<<<<< HEAD
-            <div id="card-content" className="absolute inset-0 bg-gradient-to-r from-blue-600 to-violet-600 opacity-0 hover:opacity-100 w-full h-full flex flex-col gap-6 justify-center items-center p-6 text-white transition-all duration-300 ease-in-out">
-=======
             <h3 className="font-semibold text-2xl italic tracking-[2px] py-4">
                 {work.projectName}
             </h3>
             {/* <div id="card-content" className="absolute inset-0 bg-gradient-to-r from-blue-600 to-violet-600 opacity-0 hover:opacity-100 w-full h-full flex flex-col gap-6 justify-center items-center p-6 text-white transition-all duration-300 ease-in-out">
->>>>>>> main
               <h3 className="font-semibold text-2xl italic tracking-[2px]">
                 {work.projectName}
               </h3>
@@ -114,11 +110,7 @@ function OurWork() {
                 </span>
                 <span className="text-green-600">4.9 / 5.0</span>
               </p> */}
-<<<<<<< HEAD
-            </div>  
-=======
             {/* </div> */}
->>>>>>> main
           </a>
         ))}
       </div>
