@@ -17,7 +17,7 @@ function OurWork() {
     {
       projectName: 'ThreatsEye',
       projectImg: 'robot.png',
-      description: 'sample',
+      description: 'ThreatsEye is an advanced cybersecurity platform that leverages AI to provide real-time threat intelligence and monitoring. We developed a sophisticated dashboard interface that visualizes complex security data through interactive charts and graphs. The platform features real-time alerts, automated threat detection, and comprehensive reporting capabilities, all built with a focus on performance and user experience.',
       url: 'https://threatseye.io/',
     },
     {
@@ -37,7 +37,7 @@ function OurWork() {
     {
       projectName: 'Neural IT',
       projectImg: 'neuralit.jpg',
-      description: 'sample',
+      description: 'We developed a modern, responsive website for Neural IT that showcases their IT services and solutions. The site features a clean, professional design with smooth animations and interactive elements. Key highlights include a dynamic service showcase, client testimonials, and an intuitive contact system. Built with performance and user experience in mind, the website effectively communicates Neural IT\'s expertise in software development and digital transformation.',
       url: 'https://www.neuralit.com/',
     },
     {
@@ -50,7 +50,7 @@ function OurWork() {
     {
       projectName: 'Maltalingua',
       projectImg: 'malta.png',
-      description: 'sample',
+      description: 'We developed a modern, responsive website for Maltalingua, a leading English language school in Malta. The site features an intuitive booking system for language courses, accommodation options, and cultural activities. Key highlights include a dynamic course catalog, student testimonials, and an interactive campus tour. The multilingual platform effectively showcases the school\'s vibrant learning environment and Mediterranean location, helping prospective students make informed decisions about their language learning journey.',
       url: 'https://www.maltalingua.com/',
     },
   ];
