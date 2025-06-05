@@ -36,7 +36,7 @@ function OurWork() {
     },
     {
       projectName: 'Neural IT',
-      projectImg: 'neuralit.png',
+      projectImg: 'neuralit.jpg',
       description: 'sample',
       url: 'https://www.neuralit.com/',
     },
