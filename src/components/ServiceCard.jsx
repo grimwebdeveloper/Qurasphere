@@ -5,7 +5,7 @@ const ServiceCard = ({ service }) => {
   const location = useLocation();
   return (
     <>
-      <div className=" w-[359px]  grid justify-items-center text-center items-center py-8 rounded-lg shadow-lg overflow-hidden bg-white mx-auto lg:mx-0">
+      <div className=" w-[359px]  grid justify-items-center text-center items-center py-8 rounded-lg shadow-lg overflow-hidden bg-white mx-auto lg:mx-0 flex-grow">
         <div className="text-center p-4 rounded-full  bg-gray-100 ">
           <img src={service.serviceImage} alt="" className=" w-20 " />
         </div>

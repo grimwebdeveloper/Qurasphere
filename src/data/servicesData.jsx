@@ -22,13 +22,6 @@ export const servicesData = [
     serviceImage: 'react.png',
   },
   {
-    serviceName: 'Custom Web Applications',
-    description: `Need something beyond a website? Our team builds interactive web
-          apps — dashboards, tools, SaaS platforms — with smart features and
-          scalable architecture.`,
-    serviceImage: 'redux.png',
-  },
-  {
     serviceName: 'MERN Stack Development',
     description: `From concept to deployment, we handle full-stack web apps with
           MongoDB, Express, React, and Node.js. Our MERN experts build
