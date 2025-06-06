@@ -39,6 +39,7 @@ function Navbar() {
         translateX: 0,
         opacity: 1,
         duration: 1,
+        // display: 'none',
       });
 
       // Then animate nav items
@@ -72,6 +73,7 @@ function Navbar() {
           translateX: '100%',
           opacity: 0,
           duration: 1,
+          // display: 'flex'
         },
         '-=0.4'
       ); // Overlap for smooth exit
@@ -86,7 +88,11 @@ function Navbar() {
         id="navbar"
         className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
       >
-        <Link to={'/'} id="logo" className="flex items-center gap-1 md:pl-2 pl-2">
+        <Link
+          to={'/'}
+          id="logo"
+          className="flex items-center gap-1 md:pl-2 pl-2"
+        >
           <img src="logo.png" alt="logo" className="w-10" />
           <h1 className="hidden lg:block text-xl pl-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-violet-600">
             Qurasphere
@@ -120,26 +126,33 @@ function Navbar() {
             <Link
               to="/"
               className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"
+              onClick={() => setShow(false)}
             >
               Home
             </Link>
           </li>
-          <li ref={servies}>
-            <Link to="/services" className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize">
+          <li ref={servies} onClick={() => setShow(false)}>
+            <Link
+              to="/services"
+              className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"
+            >
               Services
             </Link>
-         </li>
-         {/* <li ref={aboutUs}>
+          </li>
+          {/* <li ref={aboutUs}>
             <Link to="/our-work" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
               Our Work
             </Link>
           </li> */}
-         <li ref={aboutUs}>
-            <Link to="/about-us" className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize">
+          <li ref={aboutUs} onClick={() => setShow(false)}>
+            <Link
+              to="/about-us"
+              className="px-4 py-2 text-[15px]  font-semibold hover:text-blue-600 capitalize"
+            >
               About Us
             </Link>
           </li>
-          <li ref={contactUs}>
+          <li ref={contactUs} onClick={() => setShow(false)}>
             <Link
               to="/contact-us"
               className="px-4 py-2 text-[15px] font-semibold hover:text-blue-600 capitalize"
