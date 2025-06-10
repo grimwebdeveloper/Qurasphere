@@ -99,7 +99,7 @@ function Footer() {
           </ul>
         </footer>
         <div className="w-full h-[1px] bg-zinc-600 mt-12"></div>
-        <p className="flex flex-col md:flex-row md:justify-between gap-4 text-center max-w-screen-xl mx-auto pt-6 px-8 text-zinc-400">
+        <div className="flex flex-col md:flex-row md:justify-between gap-4 text-center max-w-screen-xl mx-auto pt-6 px-8 text-zinc-400">
           <ul className="flex items-center justify-center gap-4">
             <li>
               <a href="#">Privacy Policy</a>
@@ -109,7 +109,7 @@ function Footer() {
             </li>
           </ul>
           <div>© 2025 Qurasphere. All rights reserved.</div>
-        </p>
+        </div>
       </div>
     </>
   );

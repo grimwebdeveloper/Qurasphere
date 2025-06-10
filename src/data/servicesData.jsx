@@ -22,13 +22,6 @@ export const servicesData = [
     serviceImage: 'react.png',
   },
   {
-    serviceName: 'Custom Web Applications',
-    description: `Need something beyond a website? Our team builds interactive web
-          apps — dashboards, tools, SaaS platforms — with smart features and
-          scalable architecture.`,
-    serviceImage: 'redux.png',
-  },
-  {
     serviceName: 'MERN Stack Development',
     description: `From concept to deployment, we handle full-stack web apps with
           MongoDB, Express, React, and Node.js. Our MERN experts build
@@ -68,6 +61,20 @@ export const servicesDataHome = [
           scalable, secure, and high-performance apps tailored to your
           business goals.`,
     serviceImage: 'mern.png',
+  },
+  {
+    serviceName: 'WordPress Development',
+    description: `From custom themes to plugin integration, we turn WordPress into a
+          powerful business tool. Whether it's a blog, business site, or
+          e-commerce store — we deliver speed, SEO, and simplicity.`,
+    serviceImage: 'wordpress.png',
+  },
+  {
+    serviceName: 'Drupal Development',
+    description: `For enterprise-grade CMS solutions, our Drupal developers create
+          secure, modular, and scalable websites. From government to corporate
+          needs — we’ve done it all with Drupal.`,
+    serviceImage: 'drupal.png',
   },
   {
     serviceName: 'WordPress Development',
