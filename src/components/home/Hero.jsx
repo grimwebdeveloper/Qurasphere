@@ -2,7 +2,7 @@ import { ReactTyped } from "react-typed";
 
 function Hero() {
   return (
-    <div className="relative max-w-[1280px] mx-auto min-h-[65vh] md:min-h-[90vh] px-4">
+    <div className="relative max-w-[1280px] mx-auto min-h-[65vh] md:min-h-[90vh] px-4 mt-[70px]">
       {/* Background image for mobile */}
       <div className="absolute inset-0  opacity-0 z-0">
         <img

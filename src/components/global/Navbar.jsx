@@ -83,7 +83,7 @@ function Navbar() {
   }, [show]); // 👈 Always pass dependencies to useEffect
 
   return (
-    <div className=" sticky top-0 z-50 backdrop-blur-md bg-blue-50 ">
+    <div className="fixed w-full top-0 z-50 backdrop-blur-md bg-blue-50 ">
       <nav
         id="navbar"
         className="h-20 flex items-center justify-between px-2 sm:px-8 max-w-[1280px] mx-auto"
