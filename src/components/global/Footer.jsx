@@ -27,16 +27,16 @@ function Footer() {
               Ranchi, Jharkhand, 834001
             </address>
             <div className="mt-4 flex gap-6">
-              <a href="#">
+              <a href="https://www.facebook.com/people/Qurasphere/61577187622440/">
                 <FaFacebookF className="text-zinc-400 text-xl" />
               </a>
-              <a href="#">
+              <a href="https://x.com/qurasphere">
                 <FaXTwitter className="text-zinc-400 text-xl" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/qurasphere/">
                 <FaLinkedinIn className="text-zinc-400 text-xl" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/qurasphere/">
                 <FaInstagram className="text-zinc-400 text-xl" />
               </a>
             </div>
