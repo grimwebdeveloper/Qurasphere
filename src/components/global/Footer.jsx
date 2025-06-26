@@ -30,7 +30,7 @@ function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61577187622440">
                 <FaFacebookF className="text-zinc-400 text-xl" />
               </a>
-              <a href="#">
+              <a href="https://x.com/qurasphere">
                 <FaXTwitter className="text-zinc-400 text-xl" />
               </a>
               <a href="https://www.linkedin.com/company/qurasphere/">
@@ -44,34 +44,34 @@ function Footer() {
           <ul className="text-gray-400 flex flex-col gap-2 w-fit flex-grow">
             <h3 className="text-xl font-semibold mb-4 text-white">Services</h3>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/services" target="_blank">
                 Web Design
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/services" target="_blank">
                 Website Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/services" target="_blank">
                 Drupal Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/services" target="_blank">
                 WordPress Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/api-development" target="_blank">
                 API Development
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <Link to="/services" target="_blank">
                 Software Development
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="text-gray-400 flex flex-col gap-2 w-fit flex-grow">

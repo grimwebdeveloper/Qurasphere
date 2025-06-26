@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <>
       <div className=" w-[359px]  grid justify-items-center text-center items-center py-8 rounded-lg shadow-lg overflow-hidden bg-white mx-auto lg:mx-0 flex-grow">
@@ -13,16 +13,7 @@ const ServiceCard = ({ service }) => {
           {service.serviceName}
         </h5>
         <p className="px-6 py-2  font-normal">{service.description}</p>
-        {location.pathname === '/' ? (
-          <Link
-            to="/services"
-            className="px-3 pb-6 block font-normal text-blue-500"
-          >
-            Learn more
-          </Link>
-        ) : (
-          ''
-        )}
+        <Link class="px-3 pb-6 block font-normal text-blue-500" to={service.buttonLink} data-discover="true">{service.buttonText}</Link> 
       </div>
     </>
   );
