@@ -1,5 +1,6 @@
 import { servicesDataHome } from "../../data/servicesData";
 import ServiceCard from "../ServiceCard";
+import { Link } from 'react-router-dom';
 
 
 function Services() {
@@ -11,17 +12,17 @@ function Services() {
           What We Do For You
         </h2>
         <p className="text-lg mt-2 italic text-zinc-600 shiny-text">
-          Your vision, Our Code 
+          Your vision, Our Code
         </p>
       </div>
       <div className="flex gap-8 flex-wrap justify-center">
-        {services.map((service, index) => (   
-            // <div>{service.description},{service.serviceName}</div>
-            <ServiceCard key={index} service={service}/>
-           ))}
+        {services.map((service, index) => (
+          // <div>{service.description},{service.serviceName}</div>
+          <ServiceCard key={index} service={service} /> 
+        ))}
       </div>
       {/* <div className="flex flex-col gap-6"> */}
-        {/* {services.map((service, index) => (
+      {/* {services.map((service, index) => (
           <div className="flex items-center" key={index}>
             <div>
               <h3 className="text-2xl flex items-center justify-start gap-4 font-semibold">{service.serviceName}</h3>
@@ -37,6 +38,14 @@ function Services() {
           </div>
         ))} */}
       {/* </div> */}
+      <div className="flex justify-center mt-8">
+        <Link
+          to="/services"
+          className="inline-block outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect"
+        >
+          View All Services
+        </Link>
+      </div>
     </div>
   );
 }
