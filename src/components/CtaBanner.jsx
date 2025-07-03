@@ -10,7 +10,7 @@ export default function CtaBanner() {
             <div>
             <Link
           to="/contact-us"
-          className="inline-block outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect"
+          className="inline-block outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect z-[1]"
         >
           Request a Consultation
         </Link>

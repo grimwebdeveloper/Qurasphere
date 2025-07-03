@@ -26,14 +26,14 @@ export default function ImageWithContent({
                         <li key={index}>{feature}</li>
                     ))}
                 </ul>
-                {buttonText && buttonLink && (
+                {/* {buttonText && buttonLink && (
                     <a
                         href={buttonLink}
                         className="inline-block outline outline-1 outline-blue-600 px-6 py-3 rounded-full relative font-semibold hover:text-white hover:outline-none btn-effect"
                     >
                         {buttonText}
                     </a>
-                )}
+                )} */}
 
             </div>
 
